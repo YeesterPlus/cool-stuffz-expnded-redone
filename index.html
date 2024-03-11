@@ -2,6 +2,25 @@
 <title>Cool shit</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
+        html * {
+            background:#e1e0f9;
+            color:#000000;
+            cursor:url('.cursor.png'),auto;
+            border:#000000
+        }
+        button {
+            border-radius: .5em;
+        }
+        button:hover {
+            background:#ffffff;
+        }
+        button:active {
+            background:#b2b1d6
+        }
+        p:hover p:active p {
+            background:#000000
+        }
+        @media (prefers-color-scheme: dark) {
             html * {
                 background:#21242a;
                 color:#ffff;
@@ -20,6 +39,7 @@
             p:hover p:active p {
                 background:#000000
             }
+        }
         </style></head><body>
   <button onclick="location.assign('https://github.com/yeesterPlus')">github</button><br/><button onclick="location.assign('./Apps/')">Apps</button>
 <button onclick="location.assign('./MyPwas')">my Web apps</button>
