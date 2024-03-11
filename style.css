@@ -1,0 +1,39 @@
+html * {
+    background:#e1e0f9;
+    color:#000000;
+    cursor:url('.cursor.png'),auto;
+    border:#000000;
+    font:sans-serif;
+}
+button {
+    border-radius: .5em;
+}
+button:hover {
+    background:#ffffff;
+}
+button:active {
+    background:#b2b1d6
+}
+p:hover p:active p {
+    background:#000000
+}
+@media (prefers-color-scheme: dark) {
+    html * {
+        background:#21242a;
+        color:#ffff;
+        cursor:url('.cursor.png'),auto;
+        border:#000000
+    }
+    button {
+        border-radius: .5em;
+    }
+    button:hover {
+        background:#3e424a;
+    }
+    button:active {
+        background:#0f141f
+    }
+    p:hover p:active p {
+        background:#000000
+    }
+}
