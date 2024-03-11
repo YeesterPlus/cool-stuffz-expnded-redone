@@ -5,6 +5,9 @@ html * {
     border:#000000;
     font-family:sans-serif;
 }
+code {
+    font-family:'Courier New', Courier, monospace
+}
 button {
     border-radius: .5em;
 }
