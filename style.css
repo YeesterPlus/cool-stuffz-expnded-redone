@@ -3,7 +3,7 @@ html * {
     color:#000000;
     cursor:url('.cursor.png'),auto;
     border:#000000;
-    font:sans-serif;
+    font-family:sans-serif;
 }
 button {
     border-radius: .5em;
