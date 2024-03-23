@@ -1,3 +1,4 @@
+<link rel="manifest" href="./MSMnfst.json" />
 <style>
     html 
     {
@@ -13,6 +14,36 @@
     border: none;
     }
 </style>
+<script>
+
+const cacheName = "my-awesome-pwa";
+const precacheResources = ["/"];
+self.addEventListener("install", event => {
+  console.log("Service worker install event!");
+  event.waitUntil(
+    caches.open(cacheName).then(cache => {
+      return cache.addAll(precacheResources);
+    })
+  );
+});
+self.addEventListener("activate", event => {
+  console.log("Service worker activate event!");
+});
+self.addEventListener("fetch", event => {
+  console.log("Fetch intercepted for:", event.request.url);
+  event.respondWith(
+    caches.match(event.request).then(cachedResponse => {
+      if (cachedResponse) {
+        return cachedResponse;
+      }
+      return fetch(event.request);
+    })
+  );
+});
+</script>
+<script>
+    "serviceWorker"in navigator&&window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").then(function(e){console.log("ServiceWorker registration successful with scope: ",e.scope)},function(e){console.log("ServiceWorker registration failed: ",e)})})
+</script>
 <title>Messenger</title>
 <iframe src="https://www.messenger.com/t/"
     frameborder="0" 
