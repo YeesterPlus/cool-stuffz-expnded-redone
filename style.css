@@ -5,6 +5,10 @@ html * {
     border:#000000;
     font-family:sans-serif;
 }
+close {
+    background: rgba(0,0,0,0);
+    color: rgba(255,0,0,255);
+}
 div * {
     background:#b2b1d6;
     padding: .5em;
@@ -32,6 +36,10 @@ p:hover p:active p {
         color:#ffff;
         cursor:url('.cursor.png'),auto;
         border:#000000
+    }
+    close {
+        background: rgba(0,0,0,0);
+        color: rgba(127,30,30,255);
     }
     div * {
         background:#0f141f;
