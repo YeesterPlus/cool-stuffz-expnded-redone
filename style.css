@@ -6,7 +6,8 @@ html * {
     font-family:sans-serif;
 }
 div {
-    background:#0a0a0a3e;
+    background:#b2b1d6;
+    padding: .5em;
     border-radius: .5em;
 }
 code {
@@ -19,10 +20,10 @@ button:hover {
     background:#ffffff;
 }
 button:active {
-    background:#b2b1d6
+    background:#b2b1d6;
 }
 p:hover p:active p {
-    background:#000000
+    background:#000000;
 }
 @media (prefers-color-scheme: dark) {
     html * {
@@ -31,6 +32,11 @@ p:hover p:active p {
         cursor:url('.cursor.png'),auto;
         border:#000000
     }
+    div {
+        background:#0f141f;
+        padding: .5em;
+        border-radius: .5em;
+    }
     button {
         border-radius: .5em;
     }
@@ -38,7 +44,7 @@ p:hover p:active p {
         background:#3e424a;
     }
     button:active {
-        background:#0f141f
+        background:#0f141f;
     }
     p:hover p:active p {
         background:#000000
