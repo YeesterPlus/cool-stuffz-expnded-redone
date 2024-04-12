@@ -5,7 +5,7 @@ html * {
     border:#000000;
     font-family:sans-serif;
 }
-div {
+div * {
     background:#b2b1d6;
     padding: .5em;
     border-radius: .5em;
@@ -32,7 +32,7 @@ p:hover p:active p {
         cursor:url('.cursor.png'),auto;
         border:#000000
     }
-    div {
+    div * {
         background:#0f141f;
         padding: .5em;
         border-radius: .5em;
