@@ -5,7 +5,7 @@ html * {
     border:#000000;
     font-family:sans-serif;
 }
-close {
+#close {
     background: rgba(0,0,0,0);
     color: rgba(255,0,0,255);
 }
@@ -37,7 +37,7 @@ p:hover p:active p {
         cursor:url('.cursor.png'),auto;
         border:#000000
     }
-    close {
+    #close {
         background: rgba(0,0,0,0);
         color: rgba(127,30,30,255);
     }
