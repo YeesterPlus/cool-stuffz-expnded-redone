@@ -1,13 +1,4 @@
 <html><head><link rel="manifest" href="./manifest.json" />
-    <script>
-        function createElementFromHTML(htmlString) {
-  var div = document.createElement('div');
-  div.innerHTML = htmlString.trim();
-
-  // Change this to div.childNodes to support multiple top-level nodes.
-  return div.firstChild;
-}
-    </script>
 <title>Cool shit</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="https://yeesterplus.github.io/cool-stuffz-expnded-redone/style.css">
@@ -17,5 +8,5 @@
     </h2>
   <button onclick="location.assign('https://github.com/yeesterPlus')">github</button><br/><button onclick="location.assign('./Apps/')">Apps</button>
 <button onclick="location.assign('./MyPwas')">my Web apps</button>
-<button onclick='document.body.append(createElementFromHTML`<code> echo "dev_install" | sudo -i </code>`)'> google's chromeos sudo</button>
+<button onclick='document.body.innerHtml += `<code> echo "dev_install" | sudo -i </code>`'> google's chromeos sudo</button>
 </body></html>
