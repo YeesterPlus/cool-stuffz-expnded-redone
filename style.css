@@ -8,6 +8,7 @@ html * {
 div * {
     background:#b2b1d6;
     padding: .5em;
+    gap: 1em;
     border-radius: .5em;
 }
 code {
