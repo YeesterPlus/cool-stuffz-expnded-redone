@@ -30,7 +30,7 @@
         function popup(HTML,TOP,startup){
           document.body.innerHTML += `<div id="${popupid}" style="position:absolute;"" id="popup"><br/> ${TOP} <br/> ${HTML} <button style="position:absolute; top:0px;" id="close" onclick="clickaudio.play(); devt = false;this.parentNode.close(); return false;">⛌</button></div>`;
           popupid++;
-          return new Promise((resolve)=>{requestAnimationFrame(()=>resolve( document.getElementById(popupid-1)))});
+          return new Promise((resolve)=>{requestAnimationFrame(()=>resolve( document.getElementById(""+(popupid-1))))});
         }
         HTMLButtonElement.prototype.onclick = function(){
           clickaudio.play();
