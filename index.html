@@ -13,6 +13,7 @@
     link.remove();
 }
         Object.prototype.close = function close(){
+            var thisobj = this
           this.animate({
           opacity: 0
         }, {
@@ -20,7 +21,7 @@
         }).onfinish=
         function() {
              // Remove the popup element from the DOM
-             this.remove();
+             thisobj.remove();
           };
         }
     </script>
