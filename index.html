@@ -35,7 +35,8 @@
         HTMLButtonElement.prototype.onclick = function(){
           clickaudio.play();
         }
-        function autoresize(iFrame) {iFrame.width = iFrame.contentWindow.document.body.scrollWidth;iFrame.height = iFrame.contentWindow.document.body.scrollHeight;requestAnimationFrame(()=>resize(iFrame))}
+        function autoresize(iFrame) {if((iFrame.contentDocument || iFrame.contentWindow.document).readyState  == 'complete'){
+          iFrame.width = iFrame.contentWindow.document.body.scrollWidth;iFrame.height = iFrame.contentWindow.document.body.scrollHeight;}requestAnimationFrame(()=>resize(iFrame))}
     </script>
 <title>Cool shit</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
