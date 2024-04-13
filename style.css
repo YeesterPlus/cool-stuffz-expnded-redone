@@ -1,9 +1,9 @@
 #popup {
-  animation: popup 1s ease-in-out;
-  -webkit-animation: popup 1s ease-in-out;
-  -moz-animation: popup 1s ease-in-out;
-  -o-animation: popup 1s ease-in-out;
-  -ms-animation: popup 1s ease-in-out;
+  animation: popup 1ss ease-in-out 0ss infinite normal none;
+  -webkit-animation: popup 1ss ease-in-out 0ss infinite normal none;
+  -moz-animation: popup 1ss ease-in-out 0ss infinite normal none;
+  -o-animation: popup 1ss ease-in-out 0ss infinite normal none;
+  -ms-animation: popup 1ss ease-in-out 0ss infinite normal none;
 }
 html * {
     color:#000000;
