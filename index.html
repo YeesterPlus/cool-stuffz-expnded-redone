@@ -13,7 +13,12 @@
     link.remove();
 }
         Object.prototype.close = function close(){
-          this.fadeOut(500, function() {
+          this.animate({
+          opacity: 0
+        }, {
+          duration: 500 // 0.5 seconds
+        }).onfinish=
+        function() {
              // Remove the popup element from the DOM
              this.remove();
           });
