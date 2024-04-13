@@ -33,6 +33,9 @@ button:active {
 p:hover p:active p {
     background:#000000;
 }
+h6 {
+    display:inline;
+}
 /* stop adware */
 :is([id*='google_ads_iframe'],[id*='taboola-'],.taboolaHeight,.taboola-placeholder,#credential_picker_container,#credentials-picker-container,#credential_picker_iframe,[id*='google-one-tap-iframe'],#google-one-tap-popup-container,.google-one-tap-modal-div,#amp_floatingAdDiv,#ez-content-blocker-container) {
     display:none!important;
