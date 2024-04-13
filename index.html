@@ -22,5 +22,5 @@
     </h2><br/>
   <button onclick="location.assign('https://github.com/yeesterPlus')">github</button><br/><button onclick="location.assign('./Apps/')">Apps</button>
 <button onclick="location.assign('./MyPwas')">my Web apps</button>
-<button onclick='devt = true; if (!devt) { document.body.innerHTML += `<div id="popup"><br/> <br/> <br/> <code> echo "dev_install" | sudo -i </code> <button onclick="downloadURI(\`data:text/sh;charset=utf-8;base64,ZWNobyAiZGV2X2luc3RhbGwiIHwgc3VkbyAtaQ==\`,\`devtools-installer.sh\`)"> download </button> <button id="close" onclick="devt = false;this.parentNode.remove(); return false;">⛌</button></div>` }'> chromeos dev tools installation <h6>(includes google's chromeos sudo)</h6></button>
+<button onclick='if (!devt) { document.body.innerHTML += `<div id="popup"><br/> <br/> <br/> <code> echo "dev_install" | sudo -i </code> <button onclick="downloadURI(\`data:text/sh;charset=utf-8;base64,ZWNobyAiZGV2X2luc3RhbGwiIHwgc3VkbyAtaQ==\`,\`devtools-installer.sh\`)"> download </button> <button id="close" onclick="devt = false;this.parentNode.remove(); return false;">⛌</button></div>` } devt = true; '> chromeos dev tools installation <h6>(includes google's chromeos sudo)</h6></button>
 </body></html>
