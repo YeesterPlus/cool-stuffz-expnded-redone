@@ -23,7 +23,7 @@ div * {
     padding: .5em;
     gap: 1em;
     border-radius: .5em;
-    display: flex;
+    width: min-content;
 }
 code {
     font-family:'Courier New', Courier, monospace
