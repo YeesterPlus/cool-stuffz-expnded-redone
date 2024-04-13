@@ -35,7 +35,7 @@
         HTMLButtonElement.prototype.onclick = function(){
           clickaudio.play();
         }
-        function autoresize(iFrame) {if((iFrame.contentDocument || iFrame.contentWindow.document).readyState  == 'complete'){
+        function autoresize(iFrame) {if((iFrame.contentDocument || iFrame.contentWindow.document || {readyState:"Undefined"}).readyState  == 'complete'){
           iFrame.width = iFrame.contentWindow.document.body.scrollWidth;iFrame.height = iFrame.contentWindow.document.body.scrollHeight;}requestAnimationFrame(()=>resize(iFrame))}
     </script>
 <title>Cool shit</title>
