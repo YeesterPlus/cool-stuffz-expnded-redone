@@ -5,7 +5,7 @@ html * {
     border:#000000;
     font-family:sans-serif;
 }
-html {
+html, button {
     background:#e1e0f9;
 }
 #close {
@@ -46,7 +46,7 @@ p:hover p:active p {
         cursor:url('.cursor.png'),auto;
         border:#000000
     }
-    html {
+    html, button {
         background:#21242a;
     }
     #close {
