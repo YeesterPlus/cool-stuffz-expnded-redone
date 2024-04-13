@@ -35,7 +35,12 @@
         HTMLButtonElement.prototype.onclick = function(){
           clickaudio.play();
         }
-        function autoresize(iFrame) {if((iFrame.contentDocument || (iFrame.contentWindow ||  {document:{readyState:"Undefined"}}).document || {readyState:"Undefined"}).readyState  == 'complete'){
+        function autoresize(iFrame) {try{
+          var condition= (iFrame.contentDocument || (iFrame.contentWindow ||  {document:{readyState:"Undefined"}}).document || {readyState:"Undefined"}).readyState  == 'complete'
+        }catch(err){
+          var condition = false
+        }
+          if(condition){
           iFrame.width = iFrame.contentWindow.document.body.scrollWidth;iFrame.height = iFrame.contentWindow.document.body.scrollHeight;}requestAnimationFrame(()=>resize(iFrame))}
     </script>
 <title>Cool shit</title>
