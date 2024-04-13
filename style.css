@@ -1,9 +1,12 @@
+
 html * {
-    background:#e1e0f9;
     color:#000000;
     cursor:url('.cursor.png'),auto;
     border:#000000;
     font-family:sans-serif;
+}
+html {
+    background:#e1e0f9;
 }
 #close {
     background: rgba(0,0,0,0);
@@ -39,10 +42,12 @@ p:hover p:active p {
 /* dark mode */
 @media (prefers-color-scheme: dark) {
     html * {
-        background:#21242a;
         color:#ffff;
         cursor:url('.cursor.png'),auto;
         border:#000000
+    }
+    html {
+        background:#21242a;
     }
     #close {
         background: rgba(0,0,0,0);
