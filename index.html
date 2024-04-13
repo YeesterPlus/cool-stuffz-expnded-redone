@@ -27,7 +27,7 @@
           };
         }
         function popup(HTML){
-          document.body.innerHTML += `<div id="popup"><br/> <br/> <br/> ${HTML} <button id="close" onclick="clickaudio.play(); devt = false;this.parentNode.close(); return false;">⛌</button></div>`
+          document.body.innerHTML += `<div id="popup"><br/> <br/> <br/> ${HTML} <button style="top:0px;" id="close" onclick="clickaudio.play(); devt = false;this.parentNode.close(); return false;">⛌</button></div>`
         }
         HTMLButtonElement.prototype.onclick = function(){
           clickaudio.play();
