@@ -12,6 +12,12 @@
     link.click();
     link.remove();
 }
+        Object.prototype.close = function close(){
+          this.fadeOut(500, function() {
+             // Remove the popup element from the DOM
+             this.remove();
+          });
+        }
     </script>
 <title>Cool shit</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
